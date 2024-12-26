@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
 .slick-slides > div {
   margin: 0 10px;
+}
+
+.slick-next {
+  position: absolute;
+  left: 1300px;
+}
+.footer-ul > li {
+  @apply font-extralight
+  text-sm;
+}
+.footer-ul > li > ul > li {
+  @apply mb-2
+  cursor-pointer
+  hover:underline;
+}
+.footer-ul > li > h5 {
+  @apply text-lg mb-4
+  cursor-pointer;
 }
